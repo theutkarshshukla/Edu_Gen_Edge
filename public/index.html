@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>Edugen</title>
+    <link
+      rel="icon"
+      type="images/x-icon"
+      href="https://img.freepik.com/free-psd/3d-rendering-back-school-icon_23-2149589347.jpg?w=826&t=st=1674117234~exp=1674117834~hmac=d9eded0d26d64633dbad52606de115734bae8341cf22fb7af1a18e80a8d15ef5"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    
+  
+    <!-- nav bar -->
+    <nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a class="logo" href="#"
+            ><h3>Edi-<span>fication</span></h3>
+          </a>
+        </div>
+
+        <ul>
+          <li class="item"><a href="#Home">About</a></li>
+          <li class="item"><a href="#Services">Services</a></li>
+          <li class="item"><a href="#Clients">Skills</a></li>
+          <li class="item"><a href="#Contact Us">Teams</a></li>
+          <li class="item"><a href="#Contact Us">Contacts</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+    <!-- home screen -->
+    <div id="home">
+      <!-- background -->
+
+      <!-- <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="https://cdn.dribbble.com/users/1192310/screenshots/8173878/media/21bbbf47b469a6cd7d2b906855c87b63.gif"
+      >
+        <source
+          src="https://cdn.dribbble.com/users/1192310/screenshots/8173878/media/21bbbf47b469a6cd7d2b906855c87b63.gif"
+          type="video/mp4"
+        />
+      </video> -->
+      <!-- dashboard -->
+      <div class="dashboard">
+        <div class="text">
+          <h1>Find me a answer!</h1>
+          <p>
+            Finding important topic shouldn’t be a hassle. Let’s help you in
+            getting important topics and so you can on to the bigger things.
+            Upload pdf of previous year question paper and get important topic
+            istantaneously, You’re done! Wasn’t that easy?
+          </p>
+          <a href="#" class="button">find important topics</a>
+          <a href="a.html" class="button">Give Book</a>
+          <a href="b.html" class="button">Need Book</a>
+        </div>
+        <video
+          width="750px"
+          height="auto"
+          autoplay
+          muted
+          loop
+          poster="https://cdn.dribbble.com/users/2424774/screenshots/14926175/media/49c4eb5adbddd64a1171b5b56be45ac4.jpg?compress=1&resize=1000x750&vertical=top"
+        >
+          <source
+            src="https://cdn.dribbble.com/users/2424774/screenshots/14933226/media/152ef1530ec0f331cc40e5a562c6153c.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <!-- <div class="image">
+          <img
+            width="100%"
+            src="https://cdn.dribbble.com/users/15687/screenshots/14657576/navi-optimized.png?compress=1&resize=400x300"
+          />
+        </div> -->
+      </div>
+      <!-- counter -->
+      <div class="counter">
+        <div class="count">
+          <img
+            class="img"
+            width="75px"
+            src="https://img.freepik.com/free-psd/3d-female-character-reading-book_23-2148938892.jpg?w=826&t=st=1674117861~exp=1674118461~hmac=fd1117c0234cd09dabec7bff722ddf91add1065f97daaef8bbe1242e405351f8"
+          />
+          <h1>+20</h1>
+          <p>Users</p>
+        </div>
+        <div class="count">
+          <img
+            class="img"
+            width="75px"
+            src="https://img.freepik.com/free-vector/city-skyline-concept-illustration_114360-8923.jpg?w=1380&t=st=1674117973~exp=1674118573~hmac=d4d9ad1e7c6bdf4687d9b227a4dbdd4b13d770500eb3fa41e24ddbceb3e72c7f"
+          />
+          <h1>3</h1>
+          <p>cities</p>
+        </div>
+        <div class="count">
+          <img
+            class="img"
+            width="75px"
+            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149350216.jpg?w=826&t=st=1674117825~exp=1674118425~hmac=c1fe42300f0d02e7f2b9554bc6a64281352a87fe9f751f6f21b71fdb05fe0197"
+          />
+          <h1>+40</h1>
+          <p>Books</p>
+        </div>
+        <div class="count">
+          <img
+            class="img"
+            width="75px"
+            src="https://img.freepik.com/free-vector/time-management-concept-talk-chart_23-2148831728.jpg?w=1060&t=st=1674118033~exp=1674118633~hmac=4eb361e81044d973257803e363e44c6e1e9b2fb52b99166f18d5535d46bc58c4"
+          />
+          <h1>+0</h1>
+          <p>days</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- discription -->
+    <div class="para">
+      <h4>The EDI-FICATION working principle</h4>
+      <h1>
+        Our software uses "Computer Vision" to extract text from pdf or images
+        submitted by users using python API(pypdf2) and then eliminate common
+        words like "the","be","what" using dictionary(pre stored datastructure)
+        and sort remaining words using "nltk" and "CountVectorizer" then uses
+        flask(python's library) to give user important topic as output
+      </h1>
+    </div>
+
+    <!-- discription -->
+    <div class="para">
+      <h4>Book exchange</h4>
+      <h1>
+        We have connected our software to firebase database, and store data of
+        books in json format, every time a new book is added, a new node is
+        created storing data of all users who want to give that book
+      </h1>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p class="footer">Copyright &copy; EDI-FICATION.web.app</p>
+    </footer>
+  </body>
+</html>

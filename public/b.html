@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charpush="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link href="books.css" type="text/css" rel="stylesheet" />
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link href="nav.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+      .navbar {
+        width: 100%;
+        box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+        background-color: #6f1ab6;
+      }
+      .logo :hover {
+        color: #5900ff;
+      }
+
+      .navbar .nav-container a {
+        color: #6f1ab6;
+      }
+
+      #insert,
+      #update,
+      #remove {
+        background: black;
+        visibility: hidden;
+      }
+      .navbar {
+        height: 90px;
+      }
+      .logo {
+        margin-top: -30px;
+      }
+
+      a {
+        color: aliceblue;
+      }
+
+      a:hover {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a class="logo" href="index.html"
+            ><h3>Edi-<span>fication</span></h3>
+          </a>
+        </div>
+
+        <ul>
+          <li class="item"><a href="#Home">About</a></li>
+          <li class="item"><a href="#Services">Services</a></li>
+          <li class="item"><a href="#Clients">Skills</a></li>
+          <li class="item"><a href="#Contact Us">Teams</a></li>
+          <li class="item"><a href="#Contact Us">Contacts</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+    <div id="findDetails">
+      <!-- ID -->
+      <h1>Find by Book Name</h1>
+      <!-- ID -->
+      <h4>Book Name</h4>
+      <input id="findID" type="text" /> <br /><br />
+      <button id="find">FIND</button>
+      <h3 id="findName" type="text"></h3>
+      <h3 id="findCity" type="text"></h3>
+      <h3 id="findSpeciality" type="text"></h3>
+      <br /><br />
+    </div>
+
+    <button id="insert">INSERT</button>
+    <button id="update">UPDATE</button>
+    <button id="remove">REMOVE</button>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

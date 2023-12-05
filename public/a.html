@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charpush="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link href="books.css" type="text/css" rel="stylesheet" />
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link href="nav.css" type="text/css" rel="stylesheet" />
+    <style>
+      .navbar {
+        height: 90px;
+      }
+      .logo {
+        margin-top: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      id="background-video"
+      autoplay
+      loop
+      muted
+      poster="https://cdn.dribbble.com/users/1192310/screenshots/8173878/media/21bbbf47b469a6cd7d2b906855c87b63.gif"
+    >
+      <source
+        src="https://cdn.dribbble.com/users/3244959/screenshots/16345161/media/25d2f2c80b77f3a0d547907b4351295d.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- nav bar -->
+    <nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a class="logo" href="index.html"
+            ><h3>Edi-<span>fication</span></h3>
+          </a>
+        </div>
+
+        <ul>
+          <li class="item"><a href="#Home">About</a></li>
+          <li class="item"><a href="#Services">Services</a></li>
+          <li class="item"><a href="#Clients">Skills</a></li>
+          <li class="item"><a href="#Contact Us">Teams</a></li>
+          <li class="item"><a href="#Contact Us">Contacts</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+    <div id="enterDetails">
+      <!-- background -->
+
+      <br /><br />
+      <h1>Enter Your details</h1>
+      <br />
+
+      <!--ID-->
+      <h4>Book Name</h4>
+      <input id="enterID" type="text" placeholder="  Enter your Book Name" />
+
+      <h4>Your Name</h4>
+      <input id="enterName" type="text" placeholder="  Enter your name" />
+
+      <h4>Current City</h4>
+      <input
+        id="enterCity"
+        type="text"
+        placeholder="  Enter your Current City"
+      />
+
+      <!--age-->
+      <h4>email id</h4>
+      <input
+        id="enterSpeciality"
+        type="text"
+        placeholder="  Enter your Email id"
+      />
+      <br /><br />
+
+      <button id="insert">INSERT</button>
+      <button id="update">UPDATE</button><br />
+      <button id="remove">REMOVE</button>
+    </div>
+  </body>
+
+  <script type="module" src="index.js"></script>
+</html>
